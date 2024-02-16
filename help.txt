@@ -1,0 +1,14 @@
+1. tsc (only compile!!!)
+
+tsc -init
+
+  "module": "es6",//commonjs",
+  "outDir": "./dist",
+
+v body
+  <script src="dist/index.js" type="module"></script>
+
+tsc
+
+start: f12
+index.html  
