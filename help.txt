@@ -20,7 +20,18 @@ npm install grunt --save-dev
 npm install grunt-cli -g
 
 npm install grunt-ts
-Gruntfile.js
+Gruntfile.js создан
 
 grunt запуск
 index.html запуск из корневой папки с dist/index.js работает
+--------------
+requireJs
+    "module": "amd",
+     "outDir": "./dist",  //  не изменилось-//-
+
+    npm install requirejs --save-dev
+    npm install grunt-contrib-copy --save-dev
+    npm install grunt-contrib-clean --save-dev
+
+Gruntfile.js изменен + copy & clean plugins
+ запуск уже из /dist/index.js
