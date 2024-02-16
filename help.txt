@@ -35,3 +35,39 @@ requireJs
 
 Gruntfile.js изменен + copy & clean plugins
  запуск уже из /dist/index.js
+
+ (grunt) + (.js/or no) + (head-require) + (module amd, outdir ./dist) + start from /dist/index.html
+
+ ! аналогично можно с commonjs (тут с amd)
+
+ !!! работает и без расширений в импорте!
+------------------------
+systemjs
+
+npm install systemjs --save-dev
+    "module": "system",//amd commonjs
+
+   Gruntfile.js изменен //исп system, а не блок с  require
+(grunt) + (only with .js!!!) + (systemjs in body) + (module system, outdir ./dist) + start from /dist/index.html
+
+на этом этапе не работает убирание расширения при импорте!
+---все в 1 файл
+     "outFile": "./dist/index.js",                                  /* Specify a file that bundles all outputs into one JavaScript file. If 'declaration' is true, also designates a file that bundles all .d.ts output. */
+//     "outDir": "./dist",
+
+grunt --force
+
+=========
+gulp
+npm install --global gulp-cli
+npm install gulp@4
+npm install gulp-typescript typescript
+
+gulpfile.js из примера начало
+
+настройка копирования через pipe
+
+var gulp = require('gulp');
+var ts = require('gulp-typescript');
+
+(gulp) + (no work!) + (systemjs in body) + (module system, outdir ./dist) + start from /dist/index.html

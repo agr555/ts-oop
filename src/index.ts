@@ -23,3 +23,4 @@ console.log(Boat.getVehicleName());
 
 console.log(Car.vehicleName);
 console.log(Boat.vehicleName);
+console.log('Hello, world!');

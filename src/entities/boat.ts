@@ -13,7 +13,7 @@ export class Boat extends Vehicle implements VenicleInterface{
         return ['река','море','океан', 'озеро'];
     }}*/
 
-import {ConditionType} from "../types/condition.type"
+import {ConditionType} from "../types/condition.type.js"
 import {Vehicle} from "./vehicle.js";
 import {VenicleInterface} from "../interfaces/vehicle.interface.js"
 export class Boat extends Vehicle {

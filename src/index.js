@@ -1,6 +1,6 @@
 import { ConditionType } from "./types/condition.type.js";
-import { Car } from "./entities/car.js";
-import { Boat } from "./entities/boat.js";
+import { Car } from "./entities/car";
+import { Boat } from "./entities/boat";
 const mersedesC2022 = new Car('Mersedes', 'C-class', 2022, ConditionType.new);
 mersedesC2022.price = -1;
 console.log(mersedesC2022.toString());
