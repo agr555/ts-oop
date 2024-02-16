@@ -11,4 +11,16 @@ v body
 tsc
 
 start: f12
-index.html  
+index.html  (tsc only compile) + (.js/or no) + (body:type=module) + (module es6, outdir ./dist)
+------------------------
+grunt
+
+npm install typescript --save-dev
+npm install grunt --save-dev
+npm install grunt-cli -g
+
+npm install grunt-ts
+Gruntfile.js
+
+grunt запуск
+index.html запуск из корневой папки с dist/index.js работает
