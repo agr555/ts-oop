@@ -80,3 +80,23 @@ var ts = require('gulp-typescript');
 </head>
  ok
 (gulp) + (only with .js) + (head-require) + (module amd, outdir ./dist) + start from /dist/index.html
+-------------------
+webpack
+npm init -y
+npm install webpack webpack-cli --save-dev
+поиск typescr
+npm install --save-dev typescript ts-loader
+для добавления файлов ищем
+npm install copy-webpack-plugin --save-dev
+
+webpack.config.js
+
+"target": "es5",//2016",   было es2016
+"module": "amd",
+
+<script src="index.js" ></script>
+
+
+!!! если webpack не запускается, выполнить, чтоб уст глобально
+npm i -g webpack webpack-cli
+
